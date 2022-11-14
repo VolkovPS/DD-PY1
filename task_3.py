@@ -1,7 +1,7 @@
 import random
 
-def get_unique_list_numbers(a, b, p) -> list[int]:
-    list_ran = random.sample(range(a, b + 1), p)  #Переменные добавлены, чтобы уйти от магических числа
+def get_unique_list_numbers(left_boarder, right_boarder, amount) -> list[int]:
+    list_ran = random.sample(range(left_boarder, right_boarder + 1), amount)  #Переменные добавлены, чтобы уйти от магических числа
     return list_ran
 
 list_unique_numbers = get_unique_list_numbers(-10, 10, 15)
